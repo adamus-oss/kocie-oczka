@@ -1,0 +1,54 @@
+# ============================================================
+#  netlify.toml — konfiguracja Netlify dla Kocie Oczka
+#
+#  UWAGA: aby Decap CMS działał, włącz Netlify Identity
+#  w panelu Netlify: Site Settings > Identity > Enable
+#  oraz Git Gateway: Identity > Services > Git Gateway > Enable
+#
+#  W głównym index.html dodaj w <head>:
+#  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+#  i na dole <body> (do obsługi przekierowania po logowaniu):
+#  <script>
+#    if (window.netlifyIdentity) {
+#      window.netlifyIdentity.on("init", user => {
+#        if (!user) {
+#          window.netlifyIdentity.on("login", () => {
+#            document.location.href = "/admin/";
+#          });
+#        }
+#      });
+#    }
+#  </script>
+# ============================================================
+
+[build]
+  publish = "."
+
+# ── Nagłówki bezpieczeństwa dla panelu admina ────────────────
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# ── Nagłówki cache dla statycznych zasobów ───────────────────
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/products.json"
+  [headers.values]
+    Cache-Control = "public, max-age=60, stale-while-revalidate=300"
+
+# ── Przekierowania ───────────────────────────────────────────
+
+# Panel admina — /admin bez ukośnika → /admin/index.html
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200

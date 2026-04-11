@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A8E6CF"/>
+      <stop offset="100%" style="stop-color:#C9A8E6"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)" rx="12"/>
+  <!-- kłębek włóczki -->
+  <circle cx="200" cy="185" r="80" fill="white" opacity="0.3"/>
+  <circle cx="200" cy="185" r="80" fill="none" stroke="white" stroke-width="3" opacity="0.6"/>
+  <path d="M 140,155 Q 180,130 230,150 Q 270,170 255,215 Q 240,255 195,248" fill="none" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 145,175 Q 182,148 235,168 Q 268,185 255,225" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 152,196 Q 186,172 238,188 Q 265,198 258,232" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 160,216 Q 192,196 240,208" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <!-- szydełko -->
+  <line x1="272" y1="118" x2="272" y2="168" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 272,118 Q 272,106 263,106 Q 258,106 258,112" fill="none" stroke="white" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+  <rect x="269" y="158" width="6" height="14" rx="3" fill="white" opacity="0.8"/>
+  <!-- nitka -->
+  <path d="M 258,112 Q 255,120 260,123" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <!-- tekst -->
+  <text x="200" y="305" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle" opacity="0.9">zdjęcie wkrótce 📸</text>
+  <text x="200" y="332" font-family="Arial, sans-serif" font-size="15" fill="white" text-anchor="middle" opacity="0.7">🐱 Kocie Oczka</text>
+</svg>

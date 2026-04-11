@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kocie Oczka — szydełkowe cuda handmade! Opaski, kominy i topy zrobione z miłością przez Basię. Zamów przez WhatsApp!" />
+  <title>Kocie Oczka 🧶 — Szydełkowe wyroby handmade</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Netlify Identity Widget — wymagane do panelu CMS dla Basi (/admin) -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='16' fill='%237ECDC4'/%3E%3Cellipse cx='18' cy='20' rx='10' ry='9' fill='%23A8E6CF'/%3E%3Cellipse cx='13' cy='17' rx='3' ry='4' fill='white'/%3E%3Cellipse cx='23' cy='17' rx='3' ry='4' fill='white'/%3E%3Cellipse cx='13' cy='17.5' rx='1.2' ry='2.5' fill='%232D5A55'/%3E%3Cellipse cx='23' cy='17.5' rx='1.2' ry='2.5' fill='%232D5A55'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER — sticky, with blur
+     ============================================================ -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="#" class="logo" aria-label="Kocie Oczka — strona główna">
+      <svg class="logo-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Cat ears -->
+        <polygon points="3,14 8,2 13,14" fill="currentColor" opacity="0.85"/>
+        <polygon points="23,14 28,2 33,14" fill="currentColor" opacity="0.85"/>
+        <polygon points="5,13 8,5 11,13" fill="#E8FAF9"/>
+        <polygon points="25,13 28,5 31,13" fill="#E8FAF9"/>
+        <!-- Cat face circle -->
+        <circle cx="18" cy="20" r="13" fill="currentColor"/>
+        <!-- Cheeks -->
+        <circle cx="12" cy="22" r="4" fill="#A8E6CF" opacity="0.45"/>
+        <circle cx="24" cy="22" r="4" fill="#A8E6CF" opacity="0.45"/>
+        <!-- Eyes -->
+        <ellipse cx="13.5" cy="18" rx="2.8" ry="3.5" fill="white"/>
+        <ellipse cx="22.5" cy="18" rx="2.8" ry="3.5" fill="white"/>
+        <ellipse cx="13.5" cy="18.2" rx="1.1" ry="2.6" fill="#2D5A55"/>
+        <ellipse cx="22.5" cy="18.2" rx="1.1" ry="2.6" fill="#2D5A55"/>
+        <!-- Eye shine -->
+        <circle cx="14.2" cy="16.8" r="0.8" fill="white"/>
+        <circle cx="23.2" cy="16.8" r="0.8" fill="white"/>
+        <!-- Nose -->
+        <ellipse cx="18" cy="23" rx="1.4" ry="1" fill="#FF8B8B"/>
+        <!-- Mouth -->
+        <path d="M16 24.5 Q18 26 20 24.5" stroke="#2D5A55" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+        <!-- Whiskers left -->
+        <line x1="6" y1="21" x2="13" y2="22.5" stroke="#2D5A55" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+        <line x1="6" y1="23" x2="13" y2="23.5" stroke="#2D5A55" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+        <!-- Whiskers right -->
+        <line x1="30" y1="21" x2="23" y2="22.5" stroke="#2D5A55" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+        <line x1="30" y1="23" x2="23" y2="23.5" stroke="#2D5A55" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+      <span class="logo-text">Kocie <span>Oczka</span></span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="main-nav" aria-label="Nawigacja główna">
+      <ul class="nav-links">
+        <li><a href="#produkty">Produkty</a></li>
+        <li><a href="#jak-zamowic">Jak zamówić</a></li>
+        <li><a href="#o-mnie">O mnie</a></li>
+      </ul>
+
+      <!-- Hamburger for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" id="top">
+
+  <!-- Decorative floating circles -->
+  <div class="hero-circle hero-circle-1" aria-hidden="true"></div>
+  <div class="hero-circle hero-circle-2" aria-hidden="true"></div>
+  <div class="hero-circle hero-circle-3" aria-hidden="true"></div>
+  <div class="hero-circle hero-circle-4" aria-hidden="true"></div>
+  <div class="hero-circle hero-circle-5" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+
+    <!-- Left: text content -->
+    <div class="hero-content">
+      <div class="hero-badge">✨ Handmade z miłością</div>
+      <h1>Szydełkowe cuda<br /><span>prosto od Basi!</span></h1>
+      <p>Każdy wyrób robię własnoręcznie z kolorowej włóczki. Opaski, kominy, topy — dopasowane do Twojego stylu i na zamówienie!</p>
+      <div class="hero-buttons">
+        <a href="#produkty" class="btn btn-primary">Zobacz produkty 🧶</a>
+        <a href="#jak-zamowic" class="btn btn-outline">Jak zamówić? 💬</a>
+      </div>
+    </div>
+
+    <!-- Right: mascot photo -->
+    <div class="hero-illustration">
+      <img src="/images/kot-z-wloczka.jpg"
+           alt="Kot z kłębkiem włóczki na głowie — maskotka Kocie Oczka"
+           class="hero-cat-photo">
+      <!-- placeholder SVG (hidden when photo loads) -->
+      <svg viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustracja słodkiego kota z włóczką" class="hero-cat-svg">
+
+        <!-- Decorative sparkles / stars -->
+        <g opacity="0.9">
+          <!-- Star top-right -->
+          <path d="M190 20 L192 15 L194 20 L199 18 L194 22 L196 27 L192 23 L188 27 L190 22 L185 18 Z" fill="#FFE66D"/>
+          <!-- Star top-left -->
+          <path d="M30 35 L32 29 L34 35 L40 33 L34 37 L36 43 L32 38 L28 43 L30 37 L24 33 Z" fill="#FF8B8B" opacity="0.8"/>
+          <!-- Small star mid-right -->
+          <path d="M205 90 L206.5 86 L208 90 L212 88.5 L208 91.5 L209.5 95.5 L206.5 92 L203.5 95.5 L205 91.5 L201 88.5 Z" fill="#C9A8E6" opacity="0.85"/>
+          <!-- Tiny dots -->
+          <circle cx="18" cy="80" r="4" fill="#A8E6CF" opacity="0.7"/>
+          <circle cx="200" cy="55" r="3" fill="#FFB347" opacity="0.75"/>
+          <circle cx="15" cy="140" r="3" fill="#FFB3D9" opacity="0.65"/>
+          <circle cx="210" cy="165" r="2.5" fill="#FFE66D" opacity="0.7"/>
+        </g>
+
+        <!-- ── Orange yarn ball (bottom-right) ── -->
+        <g transform="translate(125, 155)">
+          <!-- Ball shadow -->
+          <ellipse cx="40" cy="92" rx="35" ry="8" fill="#2D5A55" opacity="0.08"/>
+          <!-- Main ball -->
+          <circle cx="40" cy="68" r="52" fill="#FFB347"/>
+          <!-- Ball shading -->
+          <circle cx="40" cy="68" r="52" fill="url(#yarnGrad)"/>
+          <!-- Yarn wrap lines -->
+          <ellipse cx="40" cy="68" rx="52" ry="20" stroke="#FF8B8B" stroke-width="2.5" fill="none" opacity="0.55" transform="rotate(-30 40 68)"/>
+          <ellipse cx="40" cy="68" rx="52" ry="20" stroke="#E8900A" stroke-width="2" fill="none" opacity="0.4" transform="rotate(30 40 68)"/>
+          <ellipse cx="40" cy="68" rx="52" ry="16" stroke="#FFD580" stroke-width="1.5" fill="none" opacity="0.5" transform="rotate(80 40 68)"/>
+          <ellipse cx="40" cy="68" rx="52" ry="16" stroke="#FF8B8B" stroke-width="1.5" fill="none" opacity="0.35" transform="rotate(-60 40 68)"/>
+          <!-- Ball shine -->
+          <circle cx="22" cy="52" r="14" fill="white" opacity="0.18"/>
+          <circle cx="18" cy="48" r="6" fill="white" opacity="0.2"/>
+        </g>
+
+        <!-- ── Crochet hook ── -->
+        <g transform="translate(148, 120) rotate(-35)">
+          <rect x="0" y="0" width="6" height="90" rx="3" fill="#C9A8E6"/>
+          <rect x="1" y="0" width="4" height="90" rx="2" fill="#D9BEFF"/>
+          <!-- Hook tip -->
+          <path d="M3 90 Q-5 96 -5 104 Q-5 112 3 112 Q8 112 8 106" stroke="#A08AC8" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <rect x="0" y="20" width="6" height="16" rx="3" fill="#FFB3D9"/>
+          <rect x="0" y="38" width="6" height="10" rx="3" fill="#7ECDC4"/>
+        </g>
+
+        <!-- ── Cat body ── -->
+        <!-- Body blob -->
+        <ellipse cx="100" cy="185" rx="62" ry="72" fill="#7ECDC4"/>
+        <!-- Tummy -->
+        <ellipse cx="100" cy="195" rx="38" ry="48" fill="#A8E6CF"/>
+
+        <!-- Front paws -->
+        <ellipse cx="62" cy="240" rx="22" ry="14" fill="#7ECDC4"/>
+        <ellipse cx="138" cy="240" rx="22" ry="14" fill="#7ECDC4"/>
+        <!-- Paw pads -->
+        <ellipse cx="62" cy="242" rx="16" ry="9" fill="#5bb8af"/>
+        <ellipse cx="138" cy="242" rx="16" ry="9" fill="#5bb8af"/>
+        <!-- Toe lines -->
+        <line x1="54" y1="238" x2="54" y2="246" stroke="#4aa89f" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="62" y1="237" x2="62" y2="247" stroke="#4aa89f" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="70" y1="238" x2="70" y2="246" stroke="#4aa89f" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="130" y1="238" x2="130" y2="246" stroke="#4aa89f" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="138" y1="237" x2="138" y2="247" stroke="#4aa89f" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="146" y1="238" x2="146" y2="246" stroke="#4aa89f" stroke-width="1.5" stroke-linecap="round"/>
+
+        <!-- Tail -->
+        <path d="M158 220 Q185 200 178 175 Q172 155 162 160 Q155 164 158 175 Q162 188 150 205" stroke="#5bb8af" stroke-width="16" stroke-linecap="round" fill="none"/>
+        <path d="M158 220 Q185 200 178 175 Q172 155 162 160 Q155 164 158 175 Q162 188 150 205" stroke="#7ECDC4" stroke-width="10" stroke-linecap="round" fill="none"/>
+        <!-- Tail tip -->
+        <ellipse cx="162" cy="159" rx="12" ry="10" fill="#FF8B8B" transform="rotate(-20 162 159)"/>
+
+        <!-- ── Cat head ── -->
+        <circle cx="100" cy="118" r="58" fill="#7ECDC4"/>
+
+        <!-- Ears -->
+        <polygon points="50,75 40,40 76,72" fill="#7ECDC4"/>
+        <polygon points="150,75 160,40 124,72" fill="#7ECDC4"/>
+        <!-- Inner ears -->
+        <polygon points="52,72 46,50 70,70" fill="#FF8B8B" opacity="0.6"/>
+        <polygon points="148,72 154,50 130,70" fill="#FF8B8B" opacity="0.6"/>
+
+        <!-- Forehead sheen -->
+        <ellipse cx="100" cy="88" rx="32" ry="16" fill="#A8E6CF" opacity="0.35"/>
+
+        <!-- Eyes -->
+        <ellipse cx="82" cy="115" rx="16" ry="19" fill="white"/>
+        <ellipse cx="118" cy="115" rx="16" ry="19" fill="white"/>
+        <!-- Iris -->
+        <ellipse cx="82" cy="116" rx="9" ry="15" fill="#2D5A55"/>
+        <ellipse cx="118" cy="116" rx="9" ry="15" fill="#2D5A55"/>
+        <!-- Pupil slit -->
+        <ellipse cx="82" cy="116" rx="4" ry="12" fill="#1a3835"/>
+        <ellipse cx="118" cy="116" rx="4" ry="12" fill="#1a3835"/>
+        <!-- Eye shine -->
+        <circle cx="87" cy="108" r="5" fill="white" opacity="0.9"/>
+        <circle cx="89" cy="106" r="2.5" fill="white"/>
+        <circle cx="123" cy="108" r="5" fill="white" opacity="0.9"/>
+        <circle cx="125" cy="106" r="2.5" fill="white"/>
+
+        <!-- Eye lashes top -->
+        <path d="M68 101 Q72 96 78 99" stroke="#2D5A55" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M102 101 Q107 96 113 99" stroke="#2D5A55" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+        <!-- Nose -->
+        <ellipse cx="100" cy="133" rx="7" ry="5" fill="#FF8B8B"/>
+        <ellipse cx="100" cy="131" rx="4" ry="2.5" fill="#FF6B6B"/>
+
+        <!-- Mouth -->
+        <path d="M93 138 Q100 144 107 138" stroke="#2D5A55" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M100 138 L100 142" stroke="#2D5A55" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+        <!-- Cheeks blush -->
+        <ellipse cx="68" cy="128" rx="14" ry="9" fill="#FFB3D9" opacity="0.45"/>
+        <ellipse cx="132" cy="128" rx="14" ry="9" fill="#FFB3D9" opacity="0.45"/>
+
+        <!-- Whiskers left -->
+        <line x1="30" y1="120" x2="68" y2="128" stroke="#2D5A55" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="28" y1="128" x2="68" y2="132" stroke="#2D5A55" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="32" y1="136" x2="68" y2="136" stroke="#2D5A55" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+        <!-- Whiskers right -->
+        <line x1="170" y1="120" x2="132" y2="128" stroke="#2D5A55" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="172" y1="128" x2="132" y2="132" stroke="#2D5A55" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        <line x1="168" y1="136" x2="132" y2="136" stroke="#2D5A55" stroke-width="1.5" stroke-linecap="round" opacity="0.35"/>
+
+        <!-- ── Big bow / kokardka on head ── -->
+        <g transform="translate(100, 62)">
+          <!-- Left bow wing -->
+          <ellipse cx="-22" cy="0" rx="22" ry="13" fill="#FF8B8B" transform="rotate(-15 -22 0)"/>
+          <ellipse cx="-22" cy="0" rx="16" ry="9" fill="#FF6B6B" opacity="0.5" transform="rotate(-15 -22 0)"/>
+          <!-- Right bow wing -->
+          <ellipse cx="22" cy="0" rx="22" ry="13" fill="#FF8B8B" transform="rotate(15 22 0)"/>
+          <ellipse cx="22" cy="0" rx="16" ry="9" fill="#FF6B6B" opacity="0.5" transform="rotate(15 22 0)"/>
+          <!-- Center knot -->
+          <circle cx="0" cy="0" r="9" fill="#FF6B6B"/>
+          <circle cx="0" cy="0" r="6" fill="#FF8B8B"/>
+          <!-- Bow shine -->
+          <circle cx="-18" cy="-5" r="5" fill="white" opacity="0.25"/>
+          <circle cx="18" cy="-5" r="5" fill="white" opacity="0.25"/>
+        </g>
+
+        <!-- Gradient definitions -->
+        <defs>
+          <radialGradient id="yarnGrad" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="white" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#E8900A" stop-opacity="0.35"/>
+          </radialGradient>
+        </defs>
+
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     PRODUCTS SECTION
+     ============================================================ -->
+<section class="products-section" id="produkty">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Moje wyroby 🧶</h2>
+      <p>Każda sztuka robiona ręcznie — możesz też zamówić swój ulubiony kolor!</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-tabs" role="group" aria-label="Filtruj produkty">
+      <button class="filter-btn active" data-filter="all">Wszystkie 🌈</button>
+      <button class="filter-btn" data-filter="opaski">Opaski 🎀</button>
+      <button class="filter-btn" data-filter="kominy">Kominy 🌀</button>
+      <button class="filter-btn" data-filter="topy">Topy ✨</button>
+    </div>
+
+    <!-- Products grid — filled by JS -->
+    <div id="products-grid" role="list" aria-live="polite" aria-label="Lista produktów">
+      <!-- Loading spinner (shown until JS replaces it) -->
+      <div class="loading-spinner" role="status" aria-label="Ładowanie produktów">
+        <div class="spinner"></div>
+        <span>Ładuję wyroby...</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     GALERIA MISIÓW — banner ze zdjęciem produktów na modelach
+     ============================================================ -->
+<section class="gallery-banner">
+  <div class="container">
+    <p class="gallery-label">🧸 Miś też lubi szydełkowe cuda!</p>
+    <img src="/images/galeria-misiow.jpg"
+         alt="Maskotki w szydełkowych opaskach i kominach Basi"
+         class="gallery-banner-img">
+    <p class="gallery-caption">Opaski i kominy na modelach — wszystko robione ręcznie przez Basię 🐱</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW TO ORDER SECTION
+     ============================================================ -->
+<section class="order-section" id="jak-zamowic">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Jak zamówić? 💬</h2>
+      <p>Tylko 3 kroki i wyrób jest Twój!</p>
+    </div>
+
+    <div class="steps-row" aria-label="Kroki zamawiania">
+
+      <!-- Step 1 -->
+      <article class="step-card">
+        <div class="step-number" aria-hidden="true">1</div>
+        <div class="step-icon-circle step-icon-1" aria-hidden="true">👀</div>
+        <h3>Wybierz wyrób</h3>
+        <p>Przejrzyj moje wyroby powyżej i wybierz ten, który Ci się podoba!</p>
+      </article>
+
+      <!-- Arrow -->
+      <div class="step-arrow" aria-hidden="true">→</div>
+
+      <!-- Step 2 -->
+      <article class="step-card">
+        <div class="step-number" aria-hidden="true">2</div>
+        <div class="step-icon-circle step-icon-2" aria-hidden="true">🛒</div>
+        <h3>Kliknij Zamów</h3>
+        <p>Naciśnij przycisk "Zamów 💬" przy wybranym produkcie.</p>
+      </article>
+
+      <!-- Arrow -->
+      <div class="step-arrow" aria-hidden="true">→</div>
+
+      <!-- Step 3 -->
+      <article class="step-card">
+        <div class="step-number" aria-hidden="true">3</div>
+        <div class="step-icon-circle step-icon-3" aria-hidden="true">💬</div>
+        <h3>WhatsApp!</h3>
+        <p>Otworzysz rozmowę na WhatsApp — napisz kolor i rozmiar, a ja odezwę się szybko!</p>
+      </article>
+
+    </div>
+
+    <div class="order-cta">
+      <a href="#" id="cta-whatsapp"
+         class="btn btn-whatsapp"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Napisz do Basi na WhatsApp">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+        Napisz na WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section class="about-section" id="o-mnie">
+  <div class="container">
+
+    <div class="about-inner">
+
+      <!-- Avatar: kot w falbanach -->
+      <div class="about-avatar">
+        <img src="/images/kot-w-falbanach.jpg"
+             alt="Kot w czerwonej sukience — Futrzak, maskotka Basi"
+             class="about-cat-photo">
+        <!-- fallback SVG -->
+        <svg width="200" height="200" viewBox="0 0 200 200" class="about-cat-svg" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustracja Basi">
+
+          <!-- Background circle -->
+          <circle cx="100" cy="100" r="96" fill="#FFE66D"/>
+          <circle cx="100" cy="100" r="96" fill="url(#avatarGrad)" opacity="0.3"/>
+
+          <!-- Stars around avatar -->
+          <path d="M24 38 L26 31 L28 38 L35 36 L28 40 L30 47 L26 41 L22 47 L24 40 L17 36 Z" fill="#FF8B8B" opacity="0.85"/>
+          <path d="M168 28 L170 22 L172 28 L178 26 L172 30 L174 36 L170 31 L166 36 L168 30 L162 26 Z" fill="#C9A8E6" opacity="0.85"/>
+          <path d="M178 162 L179.5 157 L181 162 L186 160.5 L181 163.5 L182.5 168.5 L179.5 164 L176.5 168.5 L178 163.5 L173 160.5 Z" fill="#7ECDC4" opacity="0.9"/>
+          <path d="M16 158 L17.5 153 L19 158 L24 156.5 L19 159.5 L20.5 164.5 L17.5 160 L14.5 164.5 L16 159.5 L11 156.5 Z" fill="#FFB347" opacity="0.85"/>
+          <!-- Dots -->
+          <circle cx="42" cy="170" r="5" fill="#FF8B8B" opacity="0.6"/>
+          <circle cx="158" cy="168" r="4" fill="#A8E6CF" opacity="0.65"/>
+          <circle cx="30" cy="110" r="4" fill="#C9A8E6" opacity="0.55"/>
+
+          <!-- Face -->
+          <circle cx="100" cy="105" r="62" fill="#FFCD94"/>
+          <!-- Face shading -->
+          <ellipse cx="100" cy="122" rx="50" ry="40" fill="#FFB870" opacity="0.2"/>
+
+          <!-- Hair -->
+          <ellipse cx="100" cy="72" rx="62" ry="42" fill="#8B4513"/>
+          <ellipse cx="100" cy="62" rx="56" ry="35" fill="#A0522D"/>
+          <!-- Hair shine -->
+          <ellipse cx="82" cy="56" rx="18" ry="10" fill="#CD853F" opacity="0.5"/>
+          <!-- Side hair left -->
+          <ellipse cx="45" cy="108" rx="18" ry="34" fill="#8B4513"/>
+          <!-- Side hair right -->
+          <ellipse cx="155" cy="108" rx="18" ry="34" fill="#8B4513"/>
+          <!-- Hair highlights -->
+          <path d="M50 80 Q60 65 80 60" stroke="#CD853F" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+          <path d="M55 90 Q62 78 78 72" stroke="#CD853F" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+          <!-- Hair clips / accessories -->
+          <rect x="118" y="60" width="22" height="10" rx="5" fill="#FF8B8B"/>
+          <circle cx="129" cy="65" r="4" fill="#FF6B6B"/>
+          <circle cx="129" cy="65" r="2" fill="white" opacity="0.5"/>
+
+          <!-- Ears -->
+          <ellipse cx="40" cy="108" rx="12" ry="16" fill="#FFCD94"/>
+          <ellipse cx="160" cy="108" rx="12" ry="16" fill="#FFCD94"/>
+          <ellipse cx="40" cy="108" rx="8" ry="11" fill="#FFB3C8" opacity="0.5"/>
+          <ellipse cx="160" cy="108" rx="8" ry="11" fill="#FFB3C8" opacity="0.5"/>
+
+          <!-- Eyes (big, cute) -->
+          <ellipse cx="82" cy="102" rx="18" ry="20" fill="white"/>
+          <ellipse cx="118" cy="102" rx="18" ry="20" fill="white"/>
+          <!-- Iris -->
+          <circle cx="82" cy="103" r="13" fill="#5B3A8B"/>
+          <circle cx="118" cy="103" r="13" fill="#5B3A8B"/>
+          <!-- Pupil -->
+          <circle cx="82" cy="103" r="8" fill="#2D1B4E"/>
+          <circle cx="118" cy="103" r="8" fill="#2D1B4E"/>
+          <!-- Shine spots -->
+          <circle cx="88" cy="96" r="5" fill="white" opacity="0.95"/>
+          <circle cx="90" cy="94" r="2.5" fill="white"/>
+          <circle cx="124" cy="96" r="5" fill="white" opacity="0.95"/>
+          <circle cx="126" cy="94" r="2.5" fill="white"/>
+
+          <!-- Eyelashes -->
+          <path d="M67 88 Q72 83 78 86" stroke="#2D1B4E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <path d="M103 88 Q108 83 115 86" stroke="#2D1B4E" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+          <!-- Cheeks -->
+          <ellipse cx="64" cy="118" rx="18" ry="12" fill="#FF8B8B" opacity="0.38"/>
+          <ellipse cx="136" cy="118" rx="18" ry="12" fill="#FF8B8B" opacity="0.38"/>
+
+          <!-- Nose -->
+          <ellipse cx="100" cy="120" rx="5" ry="3.5" fill="#E8956B" opacity="0.7"/>
+
+          <!-- Smile -->
+          <path d="M84 132 Q100 144 116 132" stroke="#8B4513" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <!-- Teeth (small smile) -->
+          <path d="M91 135 Q100 142 109 135" fill="white"/>
+          <path d="M91 135 Q100 142 109 135" stroke="#E0C0A0" stroke-width="0.8" fill="none"/>
+
+          <!-- Gradient defs -->
+          <defs>
+            <radialGradient id="avatarGrad" cx="30%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#FFB347" stop-opacity="0.1"/>
+            </radialGradient>
+          </defs>
+
+        </svg>
+      </div>
+
+      <!-- About text -->
+      <div class="about-content">
+        <h2>Cześć, jestem <span>Basia!</span> 👋</h2>
+        <p>
+          Mam 11 lat i uwielbiam szydełkować! Zaczęłam rok temu i od tamtej pory zrobiłam już mnóstwo kolorowych wyrobów.
+          Każda opaska, komin i top wychodzi spod moich rąk z dużą dawką miłości i staranności.
+        </p>
+        <p>
+          Możesz zamówić dowolny kolor — mam dużo włóczek do wyboru! Wysyłam też po całej Polsce. 📦
+        </p>
+        <div class="about-tags" role="list" aria-label="Tagi o Basi i wyrobach">
+          <span class="about-tag tag-1" role="listitem">🧶 Handmade</span>
+          <span class="about-tag tag-2" role="listitem">🌈 Różne kolory</span>
+          <span class="about-tag tag-3" role="listitem">💚 Na zamówienie</span>
+          <span class="about-tag tag-4" role="listitem">📦 Wysyłka też!</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-logo">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="3,14 8,2 13,14" fill="currentColor" opacity="0.85"/>
+        <polygon points="23,14 28,2 33,14" fill="currentColor" opacity="0.85"/>
+        <polygon points="5,13 8,5 11,13" fill="#1a3835"/>
+        <polygon points="25,13 28,5 31,13" fill="#1a3835"/>
+        <circle cx="18" cy="20" r="13" fill="currentColor"/>
+        <ellipse cx="13.5" cy="18" rx="2.8" ry="3.5" fill="white"/>
+        <ellipse cx="22.5" cy="18" rx="2.8" ry="3.5" fill="white"/>
+        <ellipse cx="13.5" cy="18.2" rx="1.1" ry="2.6" fill="#1a3835"/>
+        <ellipse cx="22.5" cy="18.2" rx="1.1" ry="2.6" fill="#1a3835"/>
+        <circle cx="14.2" cy="16.8" r="0.8" fill="white"/>
+        <circle cx="23.2" cy="16.8" r="0.8" fill="white"/>
+        <ellipse cx="18" cy="23" rx="1.4" ry="1" fill="#FF8B8B"/>
+        <path d="M16 24.5 Q18 26 20 24.5" stroke="white" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span class="logo-text">Kocie <span>Oczka</span></span>
+    </div>
+
+    <p class="footer-tagline">Szydełkowe cuda handmade — robione z miłością przez Basię 🧶</p>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copy">&copy; 2025 Kocie Oczka by Basia &mdash; Wszelkie prawa zastrzeżone</p>
+
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING WHATSAPP BUTTON
+     ============================================================ -->
+<a href="#" id="float-whatsapp"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Napisz do Basi na WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+  WhatsApp
+</a>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(function() {
+  'use strict';
+
+  /* ─── Product Data ──────────────────────────────────────────── */
+  var WHATSAPP_NUMBER = '48XXXXXXXXX';
+
+  var products = [
+    {
+      id: 1,
+      name: 'Opaska Tęczowa',
+      category: 'opaski',
+      emoji: '🌈',
+      description: 'Kolorowa opaska szydełkowa z pastelowej włóczki. Bardzo miękka i wygodna, idealna na każdą porę roku.',
+      price: '18 zł',
+      image: ''
+    },
+    {
+      id: 2,
+      name: 'Komin Miętowy',
+      category: 'kominy',
+      emoji: '🌿',
+      description: 'Ciepły szydełkowy komin w miętowym kolorze. Delikatna splot, lekki i przewiewny — na jesień i zimę.',
+      price: '35 zł',
+      image: ''
+    },
+    {
+      id: 3,
+      name: 'Top Koralowy',
+      category: 'topy',
+      emoji: '🌸',
+      description: 'Letni top szydełkowy w koralowym kolorze. Na zamówienie — możliwa zmiana koloru i rozmiaru!',
+      price: '55 zł',
+      image: ''
+    },
+    {
+      id: 4,
+      name: 'Opaska Różowa',
+      category: 'opaski',
+      emoji: '🎀',
+      description: 'Słodka opaska w różowym kolorze z małą kokardką. Bardzo popularna wśród moich klientek!',
+      price: '20 zł',
+      image: ''
+    },
+    {
+      id: 5,
+      name: 'Komin Lawendowy',
+      category: 'kominy',
+      emoji: '💜',
+      description: 'Mięciutki komin w kolorze lawendy. Rozciągliwy splot — pasuje na wiele rozmiarów.',
+      price: '38 zł',
+      image: ''
+    },
+    {
+      id: 6,
+      name: 'Top Żółty Słonecznik',
+      category: 'topy',
+      emoji: '🌻',
+      description: 'Piękny top w słonecznikowym żółtym kolorze. Luźny krój, idealny na lato i festiwale!',
+      price: '58 zł',
+      image: ''
+    },
+    {
+      id: 7,
+      name: 'Opaska Lilac',
+      category: 'opaski',
+      emoji: '🔮',
+      description: 'Delikatna opaska w kolorze liliowym z wzorkiem ażurowym. Wygodna i stylowa.',
+      price: '22 zł',
+      image: ''
+    },
+    {
+      id: 8,
+      name: 'Komin Pomarańczowy',
+      category: 'kominy',
+      emoji: '🍊',
+      description: 'Energetyczny komin w ciepłym pomarańczowym kolorze. Wyrazisty i ciepły — na chłodne dni.',
+      price: '36 zł',
+      image: ''
+    }
+  ];
+
+  /* ─── Category label map ────────────────────────────────────── */
+  var categoryLabels = {
+    opaski: 'Opaska 🎀',
+    kominy: 'Komin 🌀',
+    topy:   'Top ✨'
+  };
+
+  /* ─── Build WhatsApp URL ────────────────────────────────────── */
+  function buildWAUrl(productName) {
+    var msg = 'Hej Basiu! Chciałabym zamówić: ' + productName + ' 🧶 Czy jest dostępne?';
+    return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
+  }
+
+  /* ─── Render product card ───────────────────────────────────── */
+  function renderCard(product) {
+    var badgeClass = 'badge-' + product.category;
+    var label = categoryLabels[product.category] || '';
+    var imageHTML;
+
+    if (product.image) {
+      imageHTML = '<img src="' + product.image + '" alt="' + product.name + '" loading="lazy" />';
+    } else {
+      imageHTML = '<div class="card-placeholder" aria-hidden="true">' + product.emoji + '</div>';
+    }
+
+    var waUrl = buildWAUrl(product.name);
+
+    return '<article class="product-card" role="listitem" data-category="' + product.category + '">' +
+      '<div class="card-image-wrap">' +
+        imageHTML +
+        '<span class="card-badge ' + badgeClass + '">' + label + '</span>' +
+      '</div>' +
+      '<div class="card-body">' +
+        '<h3 class="card-name">' + product.name + '</h3>' +
+        '<p class="card-desc">' + product.description + '</p>' +
+        '<div class="card-footer">' +
+          '<span class="card-price">' + product.price + '</span>' +
+          '<a href="' + waUrl + '" class="card-order-btn" target="_blank" rel="noopener noreferrer" aria-label="Zamów ' + product.name + ' przez WhatsApp">Zamów 💬</a>' +
+        '</div>' +
+      '</div>' +
+    '</article>';
+  }
+
+  /* ─── Render grid ───────────────────────────────────────────── */
+  function renderGrid(filter) {
+    var grid = document.getElementById('products-grid');
+    if (!grid) return;
+
+    var filtered = filter === 'all'
+      ? products
+      : products.filter(function(p) { return p.category === filter; });
+
+    if (filtered.length === 0) {
+      grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;padding:40px;color:#6a9a94;font-weight:600;">Brak wyrobów w tej kategorii — wróć wkrótce! 🧶</p>';
+      return;
+    }
+
+    grid.innerHTML = filtered.map(renderCard).join('');
+  }
+
+  /* ─── Filter tabs ───────────────────────────────────────────── */
+  function initFilters() {
+    var tabs = document.querySelectorAll('.filter-btn');
+    tabs.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        tabs.forEach(function(t) {
+          t.classList.remove('active');
+          t.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+        var filter = btn.getAttribute('data-filter');
+        renderGrid(filter);
+      });
+    });
+
+    tabs.forEach(function(btn) {
+      btn.setAttribute('aria-pressed', btn.classList.contains('active') ? 'true' : 'false');
+    });
+  }
+
+  /* ─── Sticky header scroll class ────────────────────────────── */
+  function initScrollHeader() {
+    var header = document.getElementById('site-header');
+    if (!header) return;
+
+    var onScroll = function() {
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* ─── Hamburger mobile menu ──────────────────────────────────── */
+  function initHamburger() {
+    var hamburger = document.getElementById('hamburger');
+    var header    = document.getElementById('site-header');
+    if (!hamburger || !header) return;
+
+    hamburger.addEventListener('click', function() {
+      var isOpen = header.classList.toggle('nav-open');
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    /* Close menu when a nav link is clicked */
+    var navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        header.classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* Close on outside click */
+    document.addEventListener('click', function(e) {
+      if (!header.contains(e.target)) {
+        header.classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* ─── Simulate loading delay, then render ───────────────────── */
+  function initProducts() {
+    setTimeout(function() {
+      renderGrid('all');
+      initFilters();
+    }, 600);
+  }
+
+  /* ─── Boot ───────────────────────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', function() {
+    initScrollHeader();
+    initHamburger();
+    initProducts();
+  });
+
+})();
+</script>
+
+</body>
+</html>

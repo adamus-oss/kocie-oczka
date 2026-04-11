@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="90mm" height="50mm"
+     viewBox="0 0 90 50">
+
+  <!--
+    Pieczatka: KOCIE OCZKA
+    Rozmiar: 90 x 50 mm
+    Kolor glowny: fiolet #5B2D8E
+    Do druku: otworz w Inkscape, Eksportuj jako PNG 300 dpi
+    QR kod: dodac po uzyskaniu adresu strony WWW
+  -->
+
+  <!-- === OBRAMOWANIE === -->
+  <rect x="0.8" y="0.8" width="88.4" height="48.4" rx="3" ry="3"
+        fill="none" stroke="#5B2D8E" stroke-width="1.2"/>
+  <rect x="2.2" y="2.2" width="85.6" height="45.6" rx="2.5" ry="2.5"
+        fill="none" stroke="#5B2D8E" stroke-width="0.4"/>
+
+  <!-- === KOT (cx=19, cy=25, r=13) === -->
+
+  <!-- Glowa kota -->
+  <circle cx="19" cy="25" r="13"
+          fill="none" stroke="#5B2D8E" stroke-width="0.9"/>
+
+  <!-- Lewe ucho -->
+  <polygon points="9,17.5 12,9.5 17.5,17.5" fill="#5B2D8E"/>
+  <polygon points="10.5,17 12.7,11.5 16,17" fill="white"/>
+
+  <!-- Prawe ucho -->
+  <polygon points="20.5,17.5 26,9.5 29,17.5" fill="#5B2D8E"/>
+  <polygon points="22,17 25.3,11.5 27.5,17" fill="white"/>
+
+  <!-- Oczy - migdalkowe z pionowa zrenica -->
+  <ellipse cx="14.5" cy="23.5" rx="3.2" ry="2.8" fill="#5B2D8E"/>
+  <ellipse cx="23.5" cy="23.5" rx="3.2" ry="2.8" fill="#5B2D8E"/>
+  <ellipse cx="14.5" cy="23.5" rx="1.3" ry="2.4" fill="white"/>
+  <ellipse cx="23.5" cy="23.5" rx="1.3" ry="2.4" fill="white"/>
+  <circle cx="15.3" cy="22.4" r="0.7" fill="#5B2D8E"/>
+  <circle cx="24.3" cy="22.4" r="0.7" fill="#5B2D8E"/>
+
+  <!-- Nos -->
+  <polygon points="19,27.5 17.3,29.8 20.7,29.8" fill="#5B2D8E"/>
+
+  <!-- Usta -->
+  <line x1="19" y1="27.5" x2="19" y2="29.8" stroke="#5B2D8E" stroke-width="0.5"/>
+  <path d="M 17.3,29.8 Q 19,31.5 20.7,29.8"
+        fill="none" stroke="#5B2D8E" stroke-width="0.65" stroke-linecap="round"/>
+
+  <!-- Wasy lewe (3 wasy) -->
+  <line x1="5" y1="26.5" x2="15.5" y2="27.8" stroke="#5B2D8E" stroke-width="0.45"/>
+  <line x1="5" y1="29"   x2="15.5" y2="29.5" stroke="#5B2D8E" stroke-width="0.45"/>
+  <line x1="5" y1="31.5" x2="15.5" y2="31"   stroke="#5B2D8E" stroke-width="0.45"/>
+
+  <!-- Wasy prawe (3 wasy) -->
+  <line x1="22.5" y1="27.8" x2="33" y2="26.5" stroke="#5B2D8E" stroke-width="0.45"/>
+  <line x1="22.5" y1="29.5" x2="33" y2="29"   stroke="#5B2D8E" stroke-width="0.45"/>
+  <line x1="22.5" y1="31"   x2="33" y2="31.5" stroke="#5B2D8E" stroke-width="0.45"/>
+
+  <!-- Kokardka na glowie -->
+  <path d="M 14.5,13.5 Q 17,11 19,13 Q 21,11 23.5,13.5"
+        fill="none" stroke="#5B2D8E" stroke-width="0.9" stroke-linecap="round"/>
+  <circle cx="19" cy="13" r="1.1" fill="#5B2D8E"/>
+
+  <!-- === SZYDELO (x=35.5, y=10..43) === -->
+
+  <!-- Trzonek -->
+  <line x1="35.5" y1="17" x2="35.5" y2="41"
+        stroke="#5B2D8E" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Haczyk (glowka) -->
+  <path d="M 35.5,17 Q 35.5,11.5 32,11.5 Q 30,11.5 30,13.5"
+        fill="none" stroke="#5B2D8E" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Zadzior haczyka -->
+  <path d="M 30,13.5 Q 29.5,15.5 31,16"
+        fill="none" stroke="#5B2D8E" stroke-width="1.3" stroke-linecap="round"/>
+
+  <!-- Uchwyt - ozdobny -->
+  <rect x="34.1" y="39.5" width="2.8" height="5" rx="1.2" fill="#5B2D8E"/>
+  <rect x="33.7" y="40.8" width="3.6" height="1" rx="0.4" fill="#5B2D8E"/>
+  <rect x="33.7" y="42.5" width="3.6" height="1" rx="0.4" fill="#5B2D8E"/>
+
+  <!-- Wloczka owinieta na szydele (dekoracyjna) -->
+  <path d="M 33.5,20 Q 31,22.5 33.5,25.5 Q 36,28.5 33.5,31.5 Q 31,34.5 33.5,37.5"
+        fill="none" stroke="#5B2D8E" stroke-width="0.7" stroke-linecap="round"/>
+
+  <!-- Klebek wloczki (maly, przy szydele) -->
+  <circle cx="31.5" cy="45" r="2.5" fill="none" stroke="#5B2D8E" stroke-width="0.55"/>
+  <path d="M 29.5,43.5 Q 31.5,44 33,43.5" fill="none" stroke="#5B2D8E" stroke-width="0.45"/>
+  <path d="M 29.2,45   Q 31.5,46 33.8,45"  fill="none" stroke="#5B2D8E" stroke-width="0.45"/>
+  <path d="M 30,47     Q 31.5,47.5 33,47"  fill="none" stroke="#5B2D8E" stroke-width="0.45"/>
+  <!-- Nitka do szydela -->
+  <path d="M 33.8,43.5 Q 34.5,41 35.5,38"
+        fill="none" stroke="#5B2D8E" stroke-width="0.45" stroke-dasharray="1,0.8"/>
+
+  <!-- === LINIA PODZIAEU === -->
+  <line x1="40.5" y1="4.5" x2="40.5" y2="45.5"
+        stroke="#5B2D8E" stroke-width="0.45" stroke-dasharray="2,1.2"/>
+
+  <!-- === TEKSTY (center x=65) === -->
+
+  <!-- Ozdobne gwiazdki -->
+  <text x="43" y="14.5" font-size="4.5" fill="#5B2D8E" font-family="Arial, sans-serif">✦</text>
+  <text x="87"  y="14.5" font-size="4.5" fill="#5B2D8E" font-family="Arial, sans-serif" text-anchor="end">✦</text>
+
+  <!-- Nazwa glowna -->
+  <text x="65" y="22"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="12" font-weight="bold"
+        fill="#5B2D8E" text-anchor="middle"
+        letter-spacing="1">KOCIE OCZKA</text>
+
+  <!-- Linia dekoracyjna pod nazwa -->
+  <line x1="43" y1="24.5" x2="87" y2="24.5" stroke="#5B2D8E" stroke-width="0.5"/>
+
+  <!-- Podtytul -->
+  <text x="65" y="33"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="6" font-style="italic"
+        fill="#5B2D8E" text-anchor="middle"
+        letter-spacing="0.4">szydełkowe cuda</text>
+
+  <!-- Linia dekoracyjna pod podtytułem -->
+  <line x1="43" y1="36" x2="87" y2="36" stroke="#5B2D8E" stroke-width="0.5"/>
+
+  <!-- Autor -->
+  <text x="65" y="44.5"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="5.5" font-style="italic"
+        fill="#5B2D8E" text-anchor="middle"
+        letter-spacing="0.6">♡  by Basia  ♡</text>
+
+</svg>

@@ -1,0 +1,76 @@
+# ============================================================
+#  Decap CMS — konfiguracja dla Kocie Oczka
+#  Panel Basi: /admin/
+# ============================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Folder, do którego trafiają pliki mediów wgrywane przez CMS
+media_folder: "images/products"
+
+# Ścieżka publiczna używana w atrybucie src obrazków
+public_folder: "/images/products"
+
+# Język interfejsu CMS (Decap obsługuje pl od wersji 3.x)
+locale: pl
+
+# ── Kolekcje ─────────────────────────────────────────────────
+
+collections:
+  - name: products
+    label: "Produkty 🧶"
+    # Typ "files" — jeden konkretny plik JSON, nie folder notatek
+    files:
+      - name: products_list
+        label: "Lista produktów"
+        file: "products.json"
+        fields:
+          - name: products
+            label: "Lista produktów"
+            widget: list
+            label_singular: "Produkt"
+            fields:
+              - name: id
+                label: "ID (kebab-case, np. opaska-mieta)"
+                widget: string
+                hint: "Unikalny identyfikator, małe litery, myślniki zamiast spacji"
+
+              - name: name
+                label: "Nazwa produktu"
+                widget: string
+
+              - name: category
+                label: "Kategoria"
+                widget: select
+                options:
+                  - { label: "Opaska 🎀", value: "opaski" }
+                  - { label: "Komin 🌀",  value: "kominy" }
+                  - { label: "Top ✨",    value: "topy" }
+
+              - name: description
+                label: "Opis"
+                widget: text
+                hint: "1–2 zdania, miły i przyjazny ton"
+
+              - name: price
+                label: "Cena (np. 25 zł)"
+                widget: string
+
+              - name: image
+                label: "Zdjęcie"
+                widget: image
+                required: false
+                allow_multiple: false
+
+              - name: available
+                label: "Dostępny"
+                widget: boolean
+                default: true
+
+              - name: emoji
+                label: "Emoji (ikona gdy brak zdjęcia)"
+                widget: string
+                default: "🧶"
+                hint: "Jedno emoji — np. 🎀 dla opasek, 🌀 dla kominów, ✨ dla topów"
