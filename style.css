@@ -1062,6 +1062,11 @@ p {
   }
 }
 
+/* ─── Filter: hidden cards ───────────────────────────────────── */
+.product-card.hidden {
+  display: none !important;
+}
+
 /* ─── Print / reduced motion ─────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
