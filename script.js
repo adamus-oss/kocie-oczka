@@ -101,16 +101,11 @@ function buildProductCard(product) {
   article.className = `product-card${available ? "" : " unavailable"}`;
   article.dataset.category = category;
 
-  // Jeśli nie ma ścieżki obrazka — od razu dodaj klasę no-image
-  if (!image) {
-    article.querySelector && void 0; // placeholder; klasa ustawiana niżej
-  }
-
   article.innerHTML = `
     <div class="product-image-wrap${image ? "" : " no-image"}">
       ${imgHtml}
       <div class="product-emoji-placeholder">${emoji}</div>
-      <span class="category-badge">${categoryLabel}</span>
+      <span class="category-badge badge-${category}">${categoryLabel}</span>
     </div>
     <div class="product-info">
       <h3 class="product-name">${escapeHtml(name)}</h3>
