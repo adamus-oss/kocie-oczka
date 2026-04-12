@@ -11,12 +11,14 @@ const CATEGORY_LABELS = {
   opaski: "Opaska 🎀",
   kominy: "Komin 🌀",
   topy:   "Top ✨",
+  inne:   "Inne 🌟",
 };
 
 const CATEGORY_EMOJI = {
   opaski: "🎀",
   kominy: "🌀",
   topy:   "✨",
+  inne:   "🌟",
 };
 
 // ── DOMContentLoaded ─────────────────────────────────────────
