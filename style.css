@@ -161,15 +161,15 @@ p {
 .btn:active { transform: scale(0.97); }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--mint-primary), #5bb8af);
+  background: linear-gradient(135deg, #FF5733, #C0392B);
   color: var(--white);
-  box-shadow: 0 4px 18px rgba(126, 205, 196, 0.45);
+  box-shadow: 0 4px 18px rgba(255, 87, 51, 0.4);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #6bbdb4, #4aa89f);
+  background: linear-gradient(135deg, #e84e2c, #a93226);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(126, 205, 196, 0.55);
+  box-shadow: 0 6px 24px rgba(255, 87, 51, 0.55);
 }
 
 .btn-outline {
@@ -413,7 +413,7 @@ p {
 }
 
 .hero-content h1 span {
-  color: var(--mint-primary);
+  color: #C41860;
 }
 
 .hero-content p {
