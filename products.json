@@ -59,6 +59,16 @@
       "image": "/images/products/top-wkrotce.jpg",
       "available": false,
       "emoji": "✨"
+    },
+    {
+      "available": true,
+      "emoji": "🧶",
+      "id": "OPASKA_AKRYL_RÓŻ",
+      "name": "OPASKA RÓŻOWA AKRYLOWA",
+      "category": "opaski",
+      "description": "To jest testowy produkt, który sprawdzamy czy można dodać",
+      "price": "999",
+      "image": "/images/products/komin-czarny.jpg"
     }
   ]
 }
