@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="90mm" height="50mm"
-     viewBox="0 0 90 50">
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="210mm" height="297mm"
+     viewBox="0 0 210 297">
 
   <!--
+    Pieczatka KOCIE OCZKA — arkusz do druku
+    Format: A4 (210x297mm)
+    Uklad:  2 kolumny x 5 rzedow = 10 pieczątek
+    Druk:   100% skali, bez skalowania "dopasuj do strony"
+    Cięcie: linie przerywane (szare) wyznaczają granice pieczątek
+  -->
+
+  <defs>
+    <symbol id="pieczatka" viewBox="0 0 90 50">
+<!--
     Pieczatka: KOCIE OCZKA — by Basia
     Rozmiar: 90 x 50 mm | Kolor: fiolet #5B2D8E
     Druk: otworz w Inkscape -> Eksportuj PNG 300 dpi
@@ -573,5 +584,36 @@
         fill="#5B2D8E" text-anchor="middle" textLength="18" lengthAdjust="spacingAndGlyphs">kocie-oczka</text>
   <text x="77" y="43.5" font-family="Arial, sans-serif" font-size="2.0"
         fill="#5B2D8E" text-anchor="middle" opacity="0.8">.netlify.app</text>
+    </symbol>
+  </defs>
+
+  <!-- Tło białe -->
+  <rect width="210" height="297" fill="white"/>
+
+  <!-- Linie cięcia -->
+
+  <rect x="9.5" y="10.5" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="109.5" y="10.5" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="9.5" y="66.75" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="109.5" y="66.75" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="9.5" y="123.0" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="109.5" y="123.0" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="9.5" y="179.25" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="109.5" y="179.25" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="9.5" y="235.5" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+  <rect x="109.5" y="235.5" width="91.0" height="51.0" fill="none" stroke="#cccccc" stroke-width="0.2" stroke-dasharray="2,1.5" rx="2.5"/>
+
+  <!-- 10 pieczątek -->
+
+  <use href="#pieczatka" x="10.0" y="11.0" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="110.0" y="11.0" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="10.0" y="67.25" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="110.0" y="67.25" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="10.0" y="123.5" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="110.0" y="123.5" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="10.0" y="179.75" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="110.0" y="179.75" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="10.0" y="236.0" width="90.0" height="50.0"/>
+  <use href="#pieczatka" x="110.0" y="236.0" width="90.0" height="50.0"/>
 
 </svg>
