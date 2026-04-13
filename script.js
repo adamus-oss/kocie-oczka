@@ -110,12 +110,31 @@ function buildProductCard(product) {
     <div class="product-info">
       <h3 class="product-name">${escapeHtml(name)}</h3>
       <p class="product-desc">${escapeHtml(description)}</p>
+      ${description ? `<button class="desc-toggle" aria-expanded="false">więcej ▾</button>` : ""}
       <div class="product-footer">
         <span class="product-price">${escapeHtml(price)}</span>
         ${btnHtml}
       </div>
     </div>
   `;
+
+  // Przycisk rozwijania opisu — pokazuj tylko gdy tekst rzeczywiście jest obcięty
+  const descEl   = article.querySelector(".product-desc");
+  const toggleBtn = article.querySelector(".desc-toggle");
+  if (descEl && toggleBtn) {
+    // Sprawdź po renderowaniu (requestAnimationFrame daje przeglądarce czas na layout)
+    requestAnimationFrame(() => {
+      if (descEl.scrollHeight <= descEl.clientHeight) {
+        toggleBtn.style.display = "none"; // tekst mieści się w całości — ukryj przycisk
+      }
+    });
+
+    toggleBtn.addEventListener("click", () => {
+      const expanded = descEl.classList.toggle("expanded");
+      toggleBtn.textContent  = expanded ? "mniej ▴" : "więcej ▾";
+      toggleBtn.setAttribute("aria-expanded", expanded);
+    });
+  }
 
   return article;
 }
