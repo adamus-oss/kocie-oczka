@@ -3,72 +3,12 @@
     {
       "available": true,
       "emoji": "🧶",
-      "id": "OPASKA_AKRYL_RÓŻ",
-      "name": "OPASKA RÓŻOWA AKRYLOWA",
+      "id": "Opaska ciemny fiolet💜💜💜",
+      "name": "Opaska ciemny fiolet ",
       "category": "opaski",
-      "description": "To jest testowy produkt, który sprawdzamy czy można dodać",
-      "price": "999",
-      "image": "/images/products/komin-czarny.jpg"
-    },
-    {
-      "id": "opaska-mieta",
-      "name": "Opaska Miętowa",
-      "category": "opaski",
-      "description": "Delikatna opaska w odcieniach mięty i morskiej zieleni — idealna na każdą porę roku. Szydełkowana z miękkiej bawełny, wygodna i trwała.",
-      "price": "25 zł",
-      "image": "/images/products/opaska-mieta.jpg",
-      "available": true,
-      "emoji": "🎀"
-    },
-    {
-      "id": "opaska-teczowa",
-      "name": "Opaska Tęczowa",
-      "category": "opaski",
-      "description": "Kolorowa opaska w tęczowe pasy, która rozświetli każdą stylizację! Wykonana ręcznie z pastelowej włóczki — dla miłośniczek koloru.",
-      "price": "28 zł",
-      "image": "/images/products/opaska-teczowa.jpg",
-      "available": true,
-      "emoji": "🎀"
-    },
-    {
-      "id": "komin-kremowy",
-      "name": "Komin Zimowy Kremowy",
-      "category": "kominy",
-      "description": "Przytulny komin w ciepłym odcieniu kremowej bieli — otuli Cię jak ulubiony sweterek. Szydełkowany z grubszej włóczki, miękki i ciepły.",
-      "price": "35 zł",
-      "image": "/images/products/komin-kremowy.jpg",
-      "available": true,
-      "emoji": "🌀"
-    },
-    {
-      "id": "komin-bordowy",
-      "name": "Komin Bordowy",
-      "category": "kominy",
-      "description": "Elegancki komin w głębokim kolorze bordo — pasuje do płaszcza, kurtki i każdej zimowej stylizacji. Ciepły, miękki i wyjątkowo przytulny.",
-      "price": "35 zł",
-      "image": "/images/products/komin-bordowy.jpg",
-      "available": true,
-      "emoji": "🌀"
-    },
-    {
-      "id": "komin-czarny",
-      "name": "Komin Czarny",
-      "category": "kominy",
-      "description": "Klasyczny czarny komin — pasuje do wszystkiego! Miękki, ciepły i wygodny. Idealny na chłodne dni.",
-      "price": "35 zł",
-      "image": "/images/products/komin-czarny.jpg",
-      "available": true,
-      "emoji": "🌀"
-    },
-    {
-      "id": "top-wkrotce",
-      "name": "Top (Wkrótce!)",
-      "category": "topy",
-      "description": "Szydełkowy top już w drodze! Basia pracuje nad wyjątkowym projektem — zapisz się, żeby być pierwsza na liście.",
-      "price": "? zł",
-      "image": "/images/products/top-wkrotce.jpg",
-      "available": false,
-      "emoji": "✨"
+      "description": "Opaska ciemny fiolet wełna naturalna rozmiar uniwersalny jeśli masz dużą albo małą głowę to napisz w zamuwieniu.\nPolecam💜💜💜",
+      "price": "28 ZŁ",
+      "image": "/images/products/20260413_102409.jpg"
     }
   ]
 }
