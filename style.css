@@ -708,6 +708,62 @@ p {
   filter: grayscale(25%);
 }
 
+/* ─── PHOTO SECTION — duo zdjęć ─────────────────────────────── */
+.photo-section {
+  padding: var(--space-2xl) 0;
+  background: var(--white);
+}
+
+.photo-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.photo-card {
+  margin: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  background: var(--mint-pale);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.photo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.photo-card-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.photo-card:hover .photo-card-img {
+  transform: scale(1.03);
+}
+
+.photo-card-caption {
+  padding: var(--space-md) var(--space-md) var(--space-lg);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .photo-duo {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
+
 /* ─── HOW TO ORDER SECTION ───────────────────────────────────── */
 .order-section {
   padding: var(--space-2xl) 0;
