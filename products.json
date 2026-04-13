@@ -61,6 +61,66 @@
       "emoji": "🌀"
     },
     {
+      "id": "komin-fioletowy-welna",
+      "name": "Komin Fioletowy z Wełny",
+      "category": "kominy",
+      "description": "Piękny komin w głębokim odcieniu fioletu — wyjątkowy i elegancki! Szydełkowany z miękkiej wełny, rozgrzeje Cię w chłodne dni i doda koloru każdej zimowej stylizacji.",
+      "price": "35 zł",
+      "image": "/images/products/komin-fioletowy-welna.jpg",
+      "available": true,
+      "emoji": "🌀"
+    },
+    {
+      "id": "komin-granat-welna",
+      "name": "Komin Granatowy z Wełny",
+      "category": "kominy",
+      "description": "Klasyczny komin w głębokim kolorze granatu — pasuje do wszystkiego i sprawdzi się w każdej sytuacji. Ciepły, miękki i wygodny na chłodne dni.",
+      "price": "35 zł",
+      "image": "/images/products/komin-granat-welna.jpg",
+      "available": true,
+      "emoji": "🌀"
+    },
+    {
+      "id": "opaska-fioletowa-welna",
+      "name": "Opaska Fioletowa z Wełny",
+      "category": "opaski",
+      "description": "Elegancka opaska w pięknym kolorze fioletu — doda charakteru każdej stylizacji! Szydełkowana z miękkiej wełny, wygodna i przyjemna w noszeniu.",
+      "price": "28 zł",
+      "image": "/images/products/opaska-fioletowa-welna.jpg",
+      "available": true,
+      "emoji": "🎀"
+    },
+    {
+      "id": "opaska-granat-welna",
+      "name": "Opaska Granatowa z Wełny",
+      "category": "opaski",
+      "description": "Klasyczna opaska w kolorze granatu — prosta, stylowa i pasuje do wszystkiego! Wykonana z wełny, miękka w dotyku i ciepła.",
+      "price": "28 zł",
+      "image": "/images/products/opaska-granat-welna.jpg",
+      "available": true,
+      "emoji": "🎀"
+    },
+    {
+      "id": "zestaw-fioletowy-welna",
+      "name": "Zestaw Opaska + Komin Fioletowy",
+      "category": "inne",
+      "description": "Kompletny zestaw w odcieniu fioletu — opaska i komin z tej samej wełny! Idealnie dopasowane połączenie do zimowej stylizacji.",
+      "price": "55 zł",
+      "image": "/images/products/zestaw-fioletowy-welna.jpg",
+      "available": true,
+      "emoji": "🌟"
+    },
+    {
+      "id": "zestaw-granat-welna",
+      "name": "Zestaw Opaska + Komin Granatowy",
+      "category": "inne",
+      "description": "Pasujący zestaw opaski i komina w kolorze granatu — zamów oboje i miej idealnie skomponowany, ciepły look! Szydełkowane ręcznie z wełny.",
+      "price": "55 zł",
+      "image": "/images/products/zestaw-granat-welna.jpg",
+      "available": true,
+      "emoji": "🌟"
+    },
+    {
       "id": "top-wkrotce",
       "name": "Top (Wkrótce!)",
       "category": "topy",
