@@ -11,28 +11,8 @@
       "emoji": "🎀"
     },
     {
-      "id": "opaska-mieta",
-      "name": "Opaska Miętowa",
-      "category": "opaski",
-      "description": "Delikatna opaska w odcieniach mięty i morskiej zieleni — idealna na każdą porę roku. Szydełkowana z miękkiej bawełny, wygodna i trwała.",
-      "price": "25 zł",
-      "image": "/images/products/opaska-mieta.jpg",
-      "available": true,
-      "emoji": "🎀"
-    },
-    {
-      "id": "opaska-teczowa",
-      "name": "Opaska Tęczowa",
-      "category": "opaski",
-      "description": "Kolorowa opaska w tęczowe pasy, która rozświetli każdą stylizację! Wykonana ręcznie z pastelowej włóczki — dla miłośniczek koloru.",
-      "price": "28 zł",
-      "image": "/images/products/opaska-teczowa.jpg",
-      "available": true,
-      "emoji": "🎀"
-    },
-    {
       "id": "opaska-fioletowa-welna",
-      "name": "Opaska Fioletowa z Wełny",
+      "name": "Opaska Fioletowa",
       "category": "opaski",
       "description": "Elegancka opaska w pięknym kolorze fioletu — doda charakteru każdej stylizacji! Szydełkowana z miękkiej wełny, wygodna i przyjemna w noszeniu.",
       "price": "28 zł",
@@ -42,7 +22,7 @@
     },
     {
       "id": "opaska-granat-welna",
-      "name": "Opaska Granatowa z Wełny",
+      "name": "Opaska Granatowa",
       "category": "opaski",
       "description": "Klasyczna opaska w kolorze granatu — prosta, stylowa i pasuje do wszystkiego! Wykonana z wełny, miękka w dotyku i ciepła.",
       "price": "28 zł",
@@ -51,38 +31,18 @@
       "emoji": "🎀"
     },
     {
-      "id": "komin-kremowy",
-      "name": "Komin Zimowy Kremowy",
-      "category": "kominy",
-      "description": "Przytulny komin w ciepłym odcieniu kremowej bieli — otuli Cię jak ulubiony sweterek. Szydełkowany z grubszej włóczki, miękki i ciepły.",
-      "price": "35 zł",
-      "image": "/images/products/komin-kremowy.jpg",
-      "available": true,
-      "emoji": "🌀"
-    },
-    {
-      "id": "komin-bordowy",
-      "name": "Komin Bordowy",
-      "category": "kominy",
-      "description": "Elegancki komin w głębokim kolorze bordo — pasuje do płaszcza, kurtki i każdej zimowej stylizacji. Ciepły, miękki i wyjątkowo przytulny.",
-      "price": "35 zł",
-      "image": "/images/products/komin-bordowy.jpg",
-      "available": true,
-      "emoji": "🌀"
-    },
-    {
       "id": "komin-czarny",
       "name": "Komin Czarny",
       "category": "kominy",
       "description": "Klasyczny czarny komin — pasuje do wszystkiego! Miękki, ciepły i wygodny. Idealny na chłodne dni.",
-      "price": "35 zł",
+      "price": "28",
       "image": "/images/products/komin-czarny.jpg",
-      "available": true,
+      "available": false,
       "emoji": "🌀"
     },
     {
       "id": "komin-fioletowy-welna",
-      "name": "Komin Fioletowy z Wełny",
+      "name": "Komin Fioletowy",
       "category": "kominy",
       "description": "Piękny komin w głębokim odcieniu fioletu — wyjątkowy i elegancki! Szydełkowany z miękkiej wełny, rozgrzeje Cię w chłodne dni i doda koloru każdej zimowej stylizacji.",
       "price": "35 zł",
@@ -92,7 +52,7 @@
     },
     {
       "id": "komin-granat-welna",
-      "name": "Komin Granatowy z Wełny",
+      "name": "Komin Granatowy",
       "category": "kominy",
       "description": "Klasyczny komin w głębokim kolorze granatu — pasuje do wszystkiego i sprawdzi się w każdej sytuacji. Ciepły, miękki i wygodny na chłodne dni.",
       "price": "35 zł",
