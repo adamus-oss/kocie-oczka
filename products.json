@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": "opaska-ciemny-fiolet",
+      "id": "opaska-ciemny-fiolet wełna",
       "name": "Opaska Ciemny Fiolet",
       "category": "opaski",
       "description": "Opaska z ciemnego fioletu — wełna naturalna, rozmiar uniwersalny. Jeśli masz dużą albo małą głowę, napisz w zamówieniu. Polecam!💜",
@@ -11,20 +11,20 @@
       "emoji": "🎀"
     },
     {
-      "id": "opaska-granat-welna",
+      "id": "opaska-granat-wełna",
       "name": "Opaska Granatowa",
       "category": "opaski",
-      "description": "Opaska wełniana w klasycznym kolorze granatu 💙 Ciepła i wygodna, rozmiar uniwersalny. Prosta i stylowa — pasuje do wszystkiego!",
+      "description": "Opaska wełniana w klasycznym kolorze granatu Ciepła i wygodna, rozmiar uniwersalny jeśli masz małą albo dużą głowe to napsz w zamówieniu. Prosta i stylowa — pasuje do wszystkiego💙",
       "price": "28 zł",
       "image": "/images/products/opaska-granat-welna.jpg",
       "available": true,
       "emoji": "🎀"
     },
     {
-      "id": "komin-czarny",
+      "id": "komin-czarny wełna",
       "name": "Komin Czarny",
       "category": "kominy",
-      "description": "Klasyczny czarny komin — pasuje do wszystkiego! Miękki, ciepły i wygodny. Idealny na chłodne dni.",
+      "description": "Klasyczny czarny komin — pasuje do wszystkiego! Miękki, ciepły i wygodny. Idealny na chłodne dni. Rozmiar uniwersalny jeśli masz małą albo dużą głowe to napisz w zamówieniu ",
       "price": "28 zł",
       "image": "/images/products/komin-czarny.jpg",
       "available": false,
@@ -34,51 +34,41 @@
       "id": "komin-fioletowy-welna",
       "name": "Komin Fioletowy",
       "category": "kominy",
-      "description": "Komin z wełny w przepięknym odcieniu fioletu 💜 Miękki, ciepły i elegancki — idealny na zimę! Rozmiar uniwersalny, pasuje dorosłym i starszym dzieciom.",
-      "price": "35 zł",
+      "description": "Komin z wełny w przepięknym odcieniu fioletu  Miękki, ciepły i elegancki — idealny na zimę! Rozmiar uniwersalny jeśli masz małą albo dużą głowe to napisz w zamówieniu, pasuje dorosłym i starszym oraz dzieciom💜",
+      "price": "28zł ",
       "image": "/images/products/komin-fioletowy-welna.jpg",
       "available": true,
       "emoji": "🌀"
     },
     {
-      "id": "komin-granat-welna",
+      "id": "komin-granat-wełna",
       "name": "Komin Granatowy",
       "category": "kominy",
-      "description": "Klasyczny komin z wełny w kolorze granatu 💙 Ciepły i wygodny, pasuje do każdej kurtki i płaszcza. Rozmiar uniwersalny!",
-      "price": "35 zł",
+      "description": "Klasyczny komin z wełny w kolorze granatu. Ciepły i wygodny, pasuje do każdej kurtki i płaszcza. Rozmiar uniwersalny jeśli masz małą albo dużą głowe to napisz w zamówieniu 💙",
+      "price": "28zł ",
       "image": "/images/products/komin-granat-welna.jpg",
       "available": true,
       "emoji": "🌀"
     },
     {
-      "id": "zestaw-fioletowy-welna",
+      "id": "zestaw-fioletowy-wełna",
       "name": "Zestaw Opaska + Komin Fioletowy",
       "category": "inne",
-      "description": "Pasujący zestaw — opaska i komin w tym samym odcieniu fioletu! 💜 Oba zrobione z tej samej wełny, więc idealnie do siebie pasują. Super na prezent!",
-      "price": "55 zł",
+      "description": "Pasujący zestaw — opaska i komin w tym samym odcieniu fioletu! Oba zrobione z tej samej wełny, więc idealnie do siebie pasują. Super na prezent! Rozmiar uniwersalny jeśli masz małą albo dużą głowe to napisz w zamówieniu.💜",
+      "price": "48zł",
       "image": "/images/products/zestaw-fioletowy-welna.jpg",
       "available": true,
       "emoji": "🌟"
     },
     {
-      "id": "zestaw-granat-welna",
+      "id": "zestaw-granat-wełna",
       "name": "Zestaw Opaska + Komin Granatowy",
       "category": "inne",
-      "description": "Pasujący zestaw opaski i komina w kolorze granatu 💙 Zrobione z tej samej wełny — idealnie do siebie pasują! Świetny pomysł na prezent.",
-      "price": "55 zł",
+      "description": "Pasujący zestaw opaski i komina w kolorze granatu . Zrobione z tej samej wełny — idealnie do siebie pasują! Świetny pomysł na prezent. Rozmiar uniwersalny jeśli masz małą albo dużą głowe to napisz w zamówieniu ",
+      "price": "48zł ",
       "image": "/images/products/zestaw-granat-welna.jpg",
       "available": true,
       "emoji": "🌟"
-    },
-    {
-      "id": "top-wkrotce",
-      "name": "Top (Wkrótce!)",
-      "category": "topy",
-      "description": "Szydełkowy top już w drodze! Basia pracuje nad wyjątkowym projektem — zapisz się, żeby być pierwsza na liście.",
-      "price": "? zł",
-      "image": "/images/products/top-wkrotce.jpg",
-      "available": false,
-      "emoji": "✨"
     }
   ]
 }
