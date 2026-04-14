@@ -75,3 +75,40 @@ collections:
                 widget: string
                 default: "🧶"
                 hint: "Jedno emoji — np. 🎀 dla opasek, 🌀 dla kominów, ✨ dla topów"
+
+  - name: reviews
+    label: "Opinie ⭐"
+    files:
+      - name: reviews_list
+        label: "Lista opinii"
+        file: "reviews.json"
+        fields:
+          - name: reviews
+            label: "Lista opinii"
+            widget: list
+            label_singular: "Opinia"
+            fields:
+              - name: id
+                label: "ID (np. r001)"
+                widget: string
+                hint: "Unikalny identyfikator, np. r001, r002"
+
+              - name: name
+                label: "Imię autora"
+                widget: string
+
+              - name: rating
+                label: "Ocena (1–5)"
+                widget: number
+                min: 1
+                max: 5
+                default: 5
+
+              - name: text
+                label: "Treść opinii"
+                widget: text
+
+              - name: date
+                label: "Data (RRRR-MM-DD)"
+                widget: string
+                hint: "Format: 2026-04-14"

@@ -58,6 +58,7 @@
       <ul class="nav-links">
         <li><a href="#produkty">Produkty</a></li>
         <li><a href="#jak-zamowic">Jak zamówić</a></li>
+        <li><a href="#opinie">Opinie</a></li>
         <li><a href="#o-mnie">O mnie</a></li>
       </ul>
 
@@ -508,6 +509,106 @@
           <span class="about-tag tag-3" role="listitem">💚 Na zamówienie</span>
           <span class="about-tag tag-4" role="listitem">📦 Wysyłka też!</span>
         </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     REVIEWS SECTION
+     ============================================================ -->
+<section class="reviews-section" id="opinie">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Opinie klientów ⭐</h2>
+      <p>Co mówią osoby, które już zamówiły? Możesz też dodać swoją opinię!</p>
+    </div>
+
+    <!-- Lista opinii — wypełniana przez JS z reviews.json -->
+    <div id="reviews-list" class="reviews-list" aria-live="polite" aria-label="Lista opinii">
+      <div class="loading-spinner" role="status" aria-label="Ładowanie opinii">
+        <div class="spinner"></div>
+        <span>Ładuję opinie...</span>
+      </div>
+    </div>
+
+    <!-- Formularz nowej opinii (Netlify Forms) -->
+    <div class="review-form-wrap">
+      <h3 class="review-form-title">Napisz swoją opinię 💬</h3>
+
+      <!-- Formularz — po wysłaniu zostaje na stronie, JS pokazuje podziękowanie -->
+      <form
+        id="review-form"
+        name="review-form"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        novalidate
+        class="review-form"
+      >
+        <!-- Ukryte pola wymagane przez Netlify -->
+        <input type="hidden" name="form-name" value="review-form" />
+        <p class="hidden" aria-hidden="true">
+          <label>Nie wypełniaj: <input name="bot-field" /></label>
+        </p>
+
+        <!-- Imię -->
+        <div class="form-field">
+          <label class="form-label" for="reviewer-name">Twoje imię <span class="required">*</span></label>
+          <input
+            class="form-input"
+            type="text"
+            id="reviewer-name"
+            name="name"
+            maxlength="60"
+            required
+            placeholder="np. Kasia"
+            autocomplete="given-name"
+          />
+        </div>
+
+        <!-- Ocena gwiazdkowa -->
+        <div class="form-field">
+          <label class="form-label">Ocena <span class="required">*</span></label>
+          <div class="star-picker" role="radiogroup" aria-label="Wybierz ocenę od 1 do 5 gwiazdek" id="star-picker">
+            <button type="button" class="star-btn" data-value="1" aria-label="1 gwiazdka" aria-pressed="false">★</button>
+            <button type="button" class="star-btn" data-value="2" aria-label="2 gwiazdki" aria-pressed="false">★</button>
+            <button type="button" class="star-btn" data-value="3" aria-label="3 gwiazdki" aria-pressed="false">★</button>
+            <button type="button" class="star-btn" data-value="4" aria-label="4 gwiazdki" aria-pressed="false">★</button>
+            <button type="button" class="star-btn" data-value="5" aria-label="5 gwiazdek" aria-pressed="false">★</button>
+          </div>
+          <input type="hidden" name="rating" id="rating-hidden" value="" />
+          <span class="star-hint" id="star-hint">Kliknij gwiazdkę, żeby wybrać ocenę</span>
+        </div>
+
+        <!-- Treść opinii -->
+        <div class="form-field">
+          <label class="form-label" for="review-text">Opinia <span class="required">*</span></label>
+          <textarea
+            class="form-input form-textarea"
+            id="review-text"
+            name="message"
+            rows="4"
+            maxlength="500"
+            required
+            placeholder="Co myślisz o wyrobach Basi?"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary review-submit-btn" id="review-submit">
+          Wyślij opinię ✨
+        </button>
+
+      </form>
+
+      <!-- Komunikat po wysłaniu (ukryty domyślnie) -->
+      <div id="review-success" class="review-success hidden" role="alert" aria-live="assertive">
+        <div class="review-success-icon">🎉</div>
+        <h3>Dziękuję za opinię!</h3>
+        <p>Twoja opinia czeka na zatwierdzenie — pojawi się wkrótce. Basia bardzo się ucieszy! 🧶</p>
       </div>
 
     </div>

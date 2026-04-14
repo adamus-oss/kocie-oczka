@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    {
+      "id": "r001",
+      "name": "Kasia M.",
+      "rating": 5,
+      "text": "Opaska dotarła szybko, jest przepiękna i bardzo dobrze wykonana. Basia ma niesamowity talent! Na pewno zamówię więcej.",
+      "date": "2026-03-28"
+    },
+    {
+      "id": "r002",
+      "name": "Ola",
+      "rating": 5,
+      "text": "Komin zrobiony na zamówienie — wybrałam kolor i dostałam dokładnie to, czego chciałam. Miękki, ciepły i śliczny!",
+      "date": "2026-04-02"
+    },
+    {
+      "id": "r003",
+      "name": "Mama Julki",
+      "rating": 5,
+      "text": "Córka zakochała się w opasce. Jakość wykonania jest naprawdę świetna jak na 11-latkę. Polecamy całym sercem!",
+      "date": "2026-04-09"
+    }
+  ]
+}

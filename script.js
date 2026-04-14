@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initWhatsAppButtons();
   fetchProducts();
+  fetchReviews();
+  initReviewForm();
 });
 
 // ── Pobieranie i renderowanie produktów ──────────────────────
@@ -254,6 +256,138 @@ function initWhatsAppButtons() {
 
   if (ctaBtn)   ctaBtn.href   = ctaUrl;
   if (floatBtn) floatBtn.href = floatUrl;
+}
+
+// ── Opinie — pobieranie i renderowanie ───────────────────────
+
+async function fetchReviews() {
+  const list = document.getElementById("reviews-list");
+  if (!list) return;
+
+  try {
+    const response = await fetch("/reviews.json");
+
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const data = await response.json();
+    const reviews = Array.isArray(data.reviews) ? data.reviews : [];
+
+    if (reviews.length === 0) {
+      list.innerHTML = '<p class="reviews-empty">Bądź pierwsza/pierwszy — dodaj opinię! 🧶</p>';
+      return;
+    }
+
+    list.innerHTML = "";
+    reviews.forEach((review) => {
+      const card = buildReviewCard(review);
+      list.appendChild(card);
+    });
+
+  } catch (error) {
+    console.error("Błąd pobierania opinii:", error);
+    list.innerHTML = '<p class="reviews-empty">Nie udało się załadować opinii.</p>';
+  }
+}
+
+function buildReviewCard(review) {
+  const { name = "Anonim", rating = 5, text = "", date = "" } = review;
+
+  const starsHtml = Array.from({ length: 5 }, (_, i) =>
+    `<span class="star${i < rating ? " filled" : ""}" aria-hidden="true">★</span>`
+  ).join("");
+
+  const dateLabel = date
+    ? new Date(date).toLocaleDateString("pl-PL", { year: "numeric", month: "long", day: "numeric" })
+    : "";
+
+  const article = document.createElement("article");
+  article.className = "review-card";
+  article.innerHTML = `
+    <div class="review-card-header">
+      <span class="review-author">${escapeHtml(name)}</span>
+      <div class="review-stars" aria-label="${rating} z 5 gwiazdek">${starsHtml}</div>
+    </div>
+    <p class="review-text">${escapeHtml(text)}</p>
+    ${dateLabel ? `<span class="review-date">${dateLabel}</span>` : ""}
+  `;
+  return article;
+}
+
+// ── Formularz opinii — gwiazdki + submit ─────────────────────
+
+function initReviewForm() {
+  initStarPicker();
+
+  const form   = document.getElementById("review-form");
+  const success = document.getElementById("review-success");
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const ratingValue = document.getElementById("rating-hidden").value;
+    if (!ratingValue) {
+      document.getElementById("star-hint").textContent = "Wybierz ocenę gwiazdkową!";
+      document.getElementById("star-hint").style.color = "var(--coral)";
+      return;
+    }
+
+    const submitBtn = document.getElementById("review-submit");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Wysyłam...";
+
+    try {
+      const formData = new FormData(form);
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      form.classList.add("hidden");
+      if (success) success.classList.remove("hidden");
+
+    } catch (err) {
+      console.error("Błąd wysyłania opinii:", err);
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Wyślij opinię ✨";
+    }
+  });
+}
+
+function initStarPicker() {
+  const picker  = document.getElementById("star-picker");
+  const hidden  = document.getElementById("rating-hidden");
+  const hint    = document.getElementById("star-hint");
+  if (!picker) return;
+
+  const buttons = picker.querySelectorAll(".star-btn");
+  let selected  = 0;
+
+  const HINTS = ["", "Słabo 😕", "Ujdzie 😐", "Dobrze 🙂", "Świetnie 😄", "Super! 🌟"];
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      selected = Number(btn.dataset.value);
+      hidden.value = selected;
+      updateStars(buttons, selected);
+      if (hint) {
+        hint.textContent = HINTS[selected] || "";
+        hint.style.color = "";
+      }
+    });
+
+    btn.addEventListener("mouseenter", () => updateStars(buttons, Number(btn.dataset.value)));
+    btn.addEventListener("mouseleave", () => updateStars(buttons, selected));
+  });
+}
+
+function updateStars(buttons, value) {
+  buttons.forEach((btn) => {
+    const isActive = Number(btn.dataset.value) <= value;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+  });
 }
 
 // ── Pomocnicze ───────────────────────────────────────────────
